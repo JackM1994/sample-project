@@ -1,0 +1,110 @@
+body{
+	margin: auto 0;
+	font-family: 'Rubik', sans-serif;
+}
+.logo{
+	height: 150px;
+	width: 150px;
+}
+.nav-link{
+	transition: 0.3s;
+}
+.nav-link:hover{
+	background-image: linear-gradient(145deg, #66fcf1, #45a29e); 
+	color: white;
+}
+#main-header{
+	height:800px;
+	background-image: url('jack.png');
+	background-repeat: no-repeat;
+	background-position: 130% 70%;
+  	background-color: #272727;
+  	background-blend-mode: darken;
+
+
+	
+}
+#main-header h1{
+	color: #66fcf1;
+	padding-top: 270px;
+	margin-left: 15px;
+	font-size: 3em; 
+	position: absolute;
+    top: 10%;
+    left: 47%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+	/*background-image: linear-gradient(145deg, #FF416C, #FF4B2B); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
+ 
+
+}
+.header-img{
+	position: relative;
+	top: -400;
+	left: 850;
+
+}
+.line{
+	display: block;
+	width: 15%; /* 25% when in mobile view */
+	height: 3px;
+	background-color:#c5c6c7;
+	position: absolute;
+    top: 23%;
+    left: 47%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+	}
+
+.web-developer{
+	font-size: 1.5em;
+	margin-left: 15px;
+	color: #45a29e;
+	margin-top: 15px;
+	/*background-image: linear-gradient(90deg, #1FA2FF, #12D8FA, #A6FFCB); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
+  	position: absolute;
+    top: 20%;
+    left: 47%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.icons{
+		position: relative;
+    	top: 26%;
+    	left: 47%;
+    	margin-right: -50%;
+    	transform: translate(-50%, -50%)
+}
+.icon-list{
+		position: absolute;
+    	top: 26%;
+    	left: 47%;
+    	margin-right: -50%;
+    	transform: translate(-50%, -50%)
+}
+.icon{
+	display: inline-block;
+}
+.main-button{
+	padding: 10px 20px;
+	color: #c5c6c7;
+	border: 2px solid #45a29e;
+	border-radius: 5px 5px;
+	background-color: #1f2833;
+	position: absolute;
+    	top: 32%;
+    	left: 47%;
+    	margin-right: -50%;
+    	transform: translate(-50%, -50%);
+    transition: 0.3s;
+
+}
+
+.main-button:hover{
+	background-color: #c5c6c7;
+	color: #1f2833;
+}
