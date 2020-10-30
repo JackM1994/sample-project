@@ -6,6 +6,12 @@ body{
 .logo{
 	height: 250px;
 	width: 250px;
+	 -webkit-animation: super-rainbow 3s infinite alternate linear; 
+     -moz-animation: super-rainbow 15s infinite alternate linear; 
+
+}
+.logo:hover{
+	filter: invert(7%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
 }
 .nav-link{
 	transition: 0.3s;
@@ -38,9 +44,7 @@ body{
     left:50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
-	/*background-image: linear-gradient(145deg, #FF416C, #FF4B2B); 
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;*/
+
  
 
 }
@@ -67,9 +71,6 @@ body{
 	margin-left: 15px;
 	color: #c5c6c7;
 	margin-top: 15px;
-	/*background-image: linear-gradient(90deg, #1FA2FF, #12D8FA, #A6FFCB); 
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;*/
   	position: absolute;
     top: 80%;
     left: 50%;
@@ -109,4 +110,61 @@ body{
 .main-button:hover{
 	background-color: #fffc00;
 	color: #46344E;
+}
+
+/*Media Queries*/
+@media (min-width: 585px){
+	.nav-link{
+		font-size: 2em;
+	}
+
+	.web-developer{
+		top: 75%;
+	}
+	.line{
+		top:85%;
+	}
+	.main-button{
+		top: 120%;
+	}
+}
+
+@media (min-width: 768px){
+	#main-header h1{
+		font-size: 7em;
+	}
+	.web-developer{
+		top: 95%;
+		font-size: 4em;
+	}
+	.line{
+		top: 105%;
+	}
+	.icon-list{
+		top: 125%;
+	}
+	.main-button{
+		top: 145%;
+		font-size: 2.5em;
+	}
+}
+
+@media (min-width: 1000px){
+		#main-header{
+			background-position: 250% 105%;
+		}
+		.nav-link{
+			margin-right: 15px;
+			margin-left: 15px;
+		}
+}
+
+/*animations*/
+@-webkit-keyframes super-rainbow {
+    0%   { filter: invert(0%) sepia(51%) saturate(278%) hue-rotate(346deg)} 
+    20%  { filter: invert(0%) sepia(51%) saturate(278%) hue-rotate(346deg)}
+    40%  { filter: invert(3%) sepia(51%) saturate(2878%) hue-rotate(346deg)}
+    60%  { filter: invert(13%) sepia(51%) saturate(2878%) hue-rotate(346deg)}
+    80%  { filter: invert(23%) sepia(51%) saturate(2878%) hue-rotate(346deg)}
+    100% { filter: invert(23%) sepia(51%) saturate(2878%) hue-rotate(346deg)}
 }
